@@ -6,7 +6,7 @@ export default function () {
     <div className="mt-10 flex justify-center space-x-10">
           {
             siteConfig.footerLinks.map(x=>(
-              <a key={x.name} href="#" className="text-gray-400 hover:text-gray-500">
+              <a key={x.name} href="#" className="text-gray-400 hover:text-gray-500  dark:text-inherit">
                 <span className="sr-only">{x.name}</span>
                 {x.icon && React.createElement(x.icon,{className:"text-xl"})}
               </a>

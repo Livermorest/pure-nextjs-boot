@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import Analytics from "@/components/analytics/Analytics";
 import { Inter as FontSans } from "next/font/google";
-import ThemeProvider from "next-themes";
+import { ThemeProvider } from "next-themes";
 
 import { cn } from "@/lib/utils";
 
@@ -23,14 +23,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body suppressHydrationWarning 
+    <html lang="en" suppressHydrationWarning>
+      <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}
       >
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider attribute="class">{children}</ThemeProvider>
       </body>
       <Analytics />
     </html>

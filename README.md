@@ -1,1 +1,1 @@
-# pure-nextjs-boot1
+# pure-nextjs-boot

@@ -1,12 +1,14 @@
+"use client"
 import { siteConfig } from "@/sysconfig";
 import Link from "next/link";
-import { Theme } from "@/types/siteConfig";
+import { useTheme } from 'next-themes'
 
-export default function ({ theme }: { theme: Theme }) {
+export default function () {
   const {
     authors: [{ company }],
     headerLinks,
   } = siteConfig;
+  const { resolvedTheme } = useTheme()
   return (
     <>
       <div className="flex lg:hidden">
@@ -23,7 +25,7 @@ export default function ({ theme }: { theme: Theme }) {
             key={item.name}
             href={item.href}
             className={`${
-              theme == Theme.dark ? "text-white" : "text-gray-900"
+              resolvedTheme == "dark" ? "text-white" : "text-gray-900"
             } text-sm font-semibold leading-6 `}
           >
             {item.name}

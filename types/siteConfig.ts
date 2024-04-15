@@ -19,10 +19,6 @@ export type ThemeColor = {
   media: string;
   color: string;
 };
-export enum Theme  {
-  light,
-  dark
-};
 export type SiteConfig = {
   name: string;
   description: string;
@@ -35,8 +31,7 @@ export type SiteConfig = {
   footerLinks: Link[];
   footerPages: PageLink[];
   metadataBase: URL | string;
-  themeColors?: string | ThemeColor[];
-  theme:Theme;
+  showThemeButton?: boolean;
   defaultNextTheme?: string;
   icons: {
     icon: string;

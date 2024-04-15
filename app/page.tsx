@@ -6,8 +6,8 @@ export default function Page() {
   return (
     <>
       <Header />
-      <main className="mt-32">
-        <Button>click me2</Button>
+      <main className="mt-32 h-96 text-9xl content-center text-center">
+        Main Area
       </main>
       <Footer />
     </>

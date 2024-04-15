@@ -12,7 +12,7 @@ export default function () {
             <div className="pb-6" key={x.name}>
               <Link 
                 href={x.url}
-                className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                className="text-sm leading-6 text-gray-600 hover:text-gray-900 dark:text-inherit"
               >
                 {x.name}
               </Link>

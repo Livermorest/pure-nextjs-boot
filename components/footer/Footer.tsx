@@ -9,12 +9,12 @@ function Page() {
   const {authors:[{company}]} = siteConfig
 
   return (
-    <footer className="bg-white">
+    <footer className="bg-white dark:bg-inherit">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <FooterPages/>
         <FooterLinks/>
         
-        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+        <p className="mt-10 text-center text-xs leading-5 text-gray-500 dark:text-inherit">
           © {currentYear} {company} Company, Inc. All rights reserved.
         </p>
       </div>
