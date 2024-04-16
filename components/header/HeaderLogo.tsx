@@ -20,8 +20,7 @@ export default function () {
         <Image
           src={resolvedTheme == 'dark' ? logodark : logolight}
           alt={company}
-          width={120}
-          height={100}
+          height={64}
         />
       </Link>
     </div>
