@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import Analytics from "@/components/analytics/Analytics";
 import { Inter as FontSans } from "next/font/google";
 import { ThemeProvider } from "next-themes";
-
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 import { cn } from "@/lib/utils";
 
 const fontSans = FontSans({
@@ -30,7 +30,12 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <ThemeProvider attribute="class">{children}</ThemeProvider>
+        <ThemeProvider attribute="class">
+          {/* @ts-expect-error Server Component */}
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
       <Analytics />
     </html>

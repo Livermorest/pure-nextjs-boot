@@ -1,7 +1,7 @@
 export default function Page() {
   return (
-    <>
-      Page
-    </>
-  )
+    <main className="mt-32 h-96 text-6xl content-center text-center">
+      PRICING
+    </main>
+  );
 }
