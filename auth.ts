@@ -46,10 +46,11 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   ],
   callbacks: {
     authorized({ request: { nextUrl }, auth }) {
-      console.log(`authorized:${nextUrl} `);
+      console.log(`authorized:${nextUrl.pathname}`);      
       //credentials:http://localhost:3000/login?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fstudio
       //github:
       if (nextUrl.pathname.startsWith("/studio")) return !!auth;
+      if (nextUrl.pathname.startsWith("/login") && !!auth) return Response.redirect(new URL('/', nextUrl));
       return true;
     },
     jwt({ token, trigger, session }) {
