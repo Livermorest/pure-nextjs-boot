@@ -31,7 +31,6 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider attribute="class">
-          {/* @ts-expect-error Server Component */}
           <Header />
           {children}
           <Footer />

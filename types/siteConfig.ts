@@ -13,7 +13,7 @@ export type PageLink = {
 export type Link = {
   name: string;
   href: string;
-  icon: IconType;
+  icon?: IconType;
 };
 export type ThemeColor = {
   media: string;

@@ -1,4 +1,4 @@
-import { SiteConfig, Theme } from "@/types/siteConfig";
+import { SiteConfig } from "@/types/siteConfig";
 import { BsGithub, BsTwitterX, BsWechat } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { SiBuymeacoffee } from "react-icons/si";

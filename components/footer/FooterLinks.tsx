@@ -1,7 +1,7 @@
 import { siteConfig } from "@/sysconfig";
 import React from "react";
 
-export default function () {
+export default function Page() {
   return ( 
     <div className="mt-10 flex justify-center space-x-10">
           {

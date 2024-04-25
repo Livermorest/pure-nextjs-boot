@@ -2,7 +2,7 @@
 import { siteConfig } from "@/sysconfig";
 import Link from "next/link";
 
-export default function () {
+export default function Page() {
   return ( 
     <nav
           className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
