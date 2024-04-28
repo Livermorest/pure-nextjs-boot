@@ -4,7 +4,7 @@ import { siteConfig } from "@/sysconfig";
 import HeaderLogo from "./HeaderLogo";
 import HeaderTheme from "./HeaderTheme";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import Image from "next/Image";
+import Image from "next/image";
 import { Fragment } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { signIn, signOut } from "next-auth/react";

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { siteConfig } from "@/sysconfig";
-import Image from "next/Image";
+import Image from "next/image";
 import logolight from "@/public/static/logo/logolight.svg";
 import logodark from "@/public/static/logo/logodark.svg";
 import { useTheme } from 'next-themes'
