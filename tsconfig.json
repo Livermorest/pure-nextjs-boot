@@ -18,8 +18,7 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"],
-      "next/image": ["./node_modules/next/image.js"],
+      "@/*": ["./*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
