@@ -1,5 +1,6 @@
 import NextAuth from "next-auth";
 import Github from "next-auth/providers/github";
+import Google from "next-auth/providers/google";
 import Credentials from "next-auth/providers/credentials";
 import { z } from "zod";
 import { sql } from "@vercel/postgres";
@@ -25,7 +26,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   // theme: { logo: "https://authjs.dev/img/logo-sm.png" },
   secret: process.env.AUTH_SECRET,
   providers: [
-    Github,
+    Github,Google,
     Credentials({
       async authorize(credentials) {
         const parsedCredentials = z

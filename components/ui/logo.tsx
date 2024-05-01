@@ -1,4 +1,4 @@
-export function google() {
+export function googleLogo() {
   return (
     <svg className="h-5 w-5" aria-hidden="true" viewBox="0 0 24 24">
       <path
@@ -21,7 +21,7 @@ export function google() {
   );
 }
 
-export function github() {
+export function githubLogo() {
   return (
     <svg
       className="h-5 w-5 fill-[#24292F]"
